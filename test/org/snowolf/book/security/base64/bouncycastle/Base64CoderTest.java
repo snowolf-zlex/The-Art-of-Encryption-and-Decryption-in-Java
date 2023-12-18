@@ -1,3 +1,5 @@
+package org.snowolf.book.security.base64.bouncycastle;
+
 import static org.junit.Assert.*;
 
 import org.junit.Test;

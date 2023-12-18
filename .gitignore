@@ -1,4 +1,6 @@
 *.class
+.vscode
+.DS_Store
 
 # Package Files #
 *.jar

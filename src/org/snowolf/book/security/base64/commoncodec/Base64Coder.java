@@ -1,4 +1,6 @@
-import org.bouncycastle.util.encoders.Base64;
+package org.snowolf.book.security.base64.commoncodec;
+
+import org.apache.commons.codec.binary.Base64;
 
 /**
  * Base64组件
@@ -22,10 +24,28 @@ public abstract class Base64Coder {
 	 * @throws Exception
 	 */
 	public static String encode(String data) throws Exception {
-		
+
 		// 执行编码
-		byte[] b = Base64.encode(data.getBytes(ENCODING));
-		
+		byte[] b = Base64.encodeBase64(data.getBytes(ENCODING));
+
+		return new String(b, ENCODING);
+	}
+
+	/**
+	 * Base64安全编码<br>
+	 * 遵循RFC 2045实现
+	 * 
+	 * @param data
+	 *            待编码数据
+	 * @return String 编码数据
+	 * 
+	 * @throws Exception
+	 */
+	public static String encodeSafe(String data) throws Exception {
+
+		// 执行编码
+		byte[] b = Base64.encodeBase64(data.getBytes(ENCODING), true);
+
 		return new String(b, ENCODING);
 	}
 
@@ -37,10 +57,10 @@ public abstract class Base64Coder {
 	 * @throws Exception
 	 */
 	public static String decode(String data) throws Exception {
-	
+
 		// 执行解码
-		byte[] b = Base64.decode(data.getBytes(ENCODING));
-		
+		byte[] b = Base64.decodeBase64(data.getBytes(ENCODING));
+
 		return new String(b, ENCODING);
 	}
 
