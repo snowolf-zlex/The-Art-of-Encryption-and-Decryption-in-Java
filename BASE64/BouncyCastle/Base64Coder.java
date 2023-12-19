@@ -1,5 +1,3 @@
-package org.snowolf.book.security.base64.bouncycastle;
-
 import org.bouncycastle.util.encoders.Base64;
 
 /**
