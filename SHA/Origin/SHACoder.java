@@ -1,5 +1,3 @@
-package org.snowolf.book.security.sha.origin;
-
 import java.security.MessageDigest; 
 
 /**
