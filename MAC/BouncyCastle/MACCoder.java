@@ -1,4 +1,3 @@
-package org.snowolf.book.security.mac.bouncycastle;
 
 import java.security.Security;
 
