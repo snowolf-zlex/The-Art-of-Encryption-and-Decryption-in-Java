@@ -1,5 +1,3 @@
-package org.snowolf.book.security.md.commoncodec;
-
 import org.apache.commons.codec.digest.DigestUtils;
 
 /**
