@@ -1,5 +1,3 @@
-package org.snowolf.book.security.mac.origin;
-
 import javax.crypto.KeyGenerator;
 import javax.crypto.Mac;
 import javax.crypto.SecretKey;
@@ -12,7 +10,7 @@ import javax.crypto.spec.SecretKeySpec;
  * @version 1.0
  * @since 1.0
  */
-public abstract class MACCoder {
+public abstract class MacCoder {
 
 	/**
 	 * 初始化HmacMD5密钥
