@@ -1,5 +1,3 @@
-package org.snowolf.book.security.mac.bouncycastle;
-
 import static org.junit.Assert.*;
 
 import org.junit.Test;
