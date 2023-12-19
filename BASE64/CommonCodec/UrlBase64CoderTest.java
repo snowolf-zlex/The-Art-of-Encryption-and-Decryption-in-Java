@@ -1,5 +1,3 @@
-package org.snowolf.book.security.base64.commoncodec;
-
 import static org.junit.Assert.*;
 
 import org.junit.Test;
