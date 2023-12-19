@@ -1,5 +1,3 @@
-package org.snowolf.book.security.sha.bouncycastle;
-
 import java.security.MessageDigest;
 import java.security.Security;
 
