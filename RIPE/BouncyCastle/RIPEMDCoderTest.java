@@ -3,21 +3,21 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 /**
- * RipeMD校验
+ * RIPEMD校验
  * 
  * @author 梁栋
  * @version 1.0
  * @since 1.0
  */
-public class RipeMDCoderTest {
+public class RIPEMDCoderTest {
 
 	/**
-	 * 测试RipeMD128
+	 * 测试RIPEMD128
 	 * 
 	 * @throws Exception
 	 */
 	@Test
-	public final void testEncodeRipeMD128() throws Exception {
+	public final void testEncodeRIPEMD128() throws Exception {
 
 		String str = "RIPEMD128消息摘要";
 
@@ -30,14 +30,14 @@ public class RipeMDCoderTest {
 	}
 
 	/**
-	 * 测试RipeMD128Hex
+	 * 测试RIPEMD128Hex
 	 * 
 	 * @throws Exception
 	 */
 	@Test
 	public final void testEncodeRIPEMD128Hex() throws Exception {
 
-		String str = "RipeMD128Hex消息摘要";
+		String str = "RIPEMD128Hex消息摘要";
 
 		// 获得摘要信息
 		String data1 = RIPEMDCoder.encodeRIPEMD128Hex(str.getBytes());
@@ -53,7 +53,7 @@ public class RipeMDCoderTest {
 	}
 
 	/**
-	 * 测试RipeMD160
+	 * 测试RIPEMD160
 	 * 
 	 * @throws Exception
 	 */
@@ -71,7 +71,7 @@ public class RipeMDCoderTest {
 	}
 
 	/**
-	 * 测试RipeMD160Hex
+	 * 测试RIPEMD160Hex
 	 * 
 	 * @throws Exception
 	 */
@@ -94,7 +94,7 @@ public class RipeMDCoderTest {
 	}
 
 	/**
-	 * 测试RipeMD256
+	 * 测试RIPEMD256
 	 * 
 	 * @throws Exception
 	 */
@@ -112,14 +112,14 @@ public class RipeMDCoderTest {
 	}
 
 	/**
-	 * 测试RipeMD256Hex
+	 * 测试RIPEMD256Hex
 	 * 
 	 * @throws Exception
 	 */
 	@Test
 	public final void testEncodeRIPEMD256Hex() throws Exception {
 
-		String str = "RipeMD256Hex消息摘要";
+		String str = "RIPEMD256Hex消息摘要";
 
 		// 获得摘要信息
 		String data1 = RIPEMDCoder.encodeRIPEMD256Hex(str.getBytes());
@@ -135,7 +135,7 @@ public class RipeMDCoderTest {
 	}
 
 	/**
-	 * 测试RipeMD320
+	 * 测试RIPEMD320
 	 * 
 	 * @throws Exception
 	 */
@@ -145,22 +145,22 @@ public class RipeMDCoderTest {
 		String str = "RIPEMD320消息摘要";
 
 		// 获得摘要信息
-		byte[] data1 = RipeMDCoder.encodeRIPEMD320(str.getBytes());
-		byte[] data2 = RipeMDCoder.encodeRIPEMD320(str.getBytes());
+		byte[] data1 = RIPEMDCoder.encodeRIPEMD320(str.getBytes());
+		byte[] data2 = RIPEMDCoder.encodeRIPEMD320(str.getBytes());
 
 		// 校验
 		assertArrayEquals(data1, data2);
 	}
 
 	/**
-	 * 测试RipeMD320Hex
+	 * 测试RIPEMD320Hex
 	 * 
 	 * @throws Exception
 	 */
 	@Test
 	public final void testEncodeRIPEMD320Hex() throws Exception {
 
-		String str = "RipeMD320Hex消息摘要";
+		String str = "RIPEMD320Hex消息摘要";
 
 		// 获得摘要信息
 		String data1 = RIPEMDCoder.encodeRIPEMD320Hex(str.getBytes());
