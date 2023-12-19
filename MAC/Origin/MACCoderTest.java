@@ -1,5 +1,3 @@
-package org.snowolf.book.security.mac.origin;
-
 import static org.junit.Assert.*;
 
 import org.junit.Test;
