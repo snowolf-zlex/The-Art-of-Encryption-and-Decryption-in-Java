@@ -1,4 +1,3 @@
-package org.snowolf.book.security.md.commoncodec;
 
 import static org.junit.Assert.*;
 
