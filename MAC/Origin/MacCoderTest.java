@@ -22,11 +22,11 @@ public class MACCoderTest {
 		String str = "HmacMD5消息摘要";
 
 		// 初始化密钥
-		byte[] key = MACCoder.initHmacMD5Key();
+		byte[] key = MacCoder.initHmacMD5Key();
 
 		// 获得摘要信息
-		byte[] data1 = MACCoder.encodeHmacMD5(str.getBytes(), key);
-		byte[] data2 = MACCoder.encodeHmacMD5(str.getBytes(), key);
+		byte[] data1 = MacCoder.encodeHmacMD5(str.getBytes(), key);
+		byte[] data2 = MacCoder.encodeHmacMD5(str.getBytes(), key);
 
 		// 校验
 		assertArrayEquals(data1, data2);
@@ -43,11 +43,11 @@ public class MACCoderTest {
 		String str = "HmacSHA1消息摘要";
 
 		// 初始化密钥
-		byte[] key = MACCoder.initHmacSHAKey();
+		byte[] key = MacCoder.initHmacSHAKey();
 
 		// 获得摘要信息
-		byte[] data1 = MACCoder.encodeHmacSHA(str.getBytes(), key);
-		byte[] data2 = MACCoder.encodeHmacSHA(str.getBytes(), key);
+		byte[] data1 = MacCoder.encodeHmacSHA(str.getBytes(), key);
+		byte[] data2 = MacCoder.encodeHmacSHA(str.getBytes(), key);
 
 		// 校验
 		assertArrayEquals(data1, data2);
@@ -64,11 +64,11 @@ public class MACCoderTest {
 		String str = "HmacSHA256消息摘要";
 
 		// 初始化密钥
-		byte[] key = MACCoder.initHmacSHA256Key();
+		byte[] key = MacCoder.initHmacSHA256Key();
 
 		// 获得摘要信息
-		byte[] data1 = MACCoder.encodeHmacSHA256(str.getBytes(), key);
-		byte[] data2 = MACCoder.encodeHmacSHA256(str.getBytes(), key);
+		byte[] data1 = MacCoder.encodeHmacSHA256(str.getBytes(), key);
+		byte[] data2 = MacCoder.encodeHmacSHA256(str.getBytes(), key);
 
 		// 校验
 		assertArrayEquals(data1, data2);
@@ -85,11 +85,11 @@ public class MACCoderTest {
 		String str = "HmacSHA384消息摘要";
 
 		// 初始化密钥
-		byte[] key = MACCoder.initHmacSHA384Key();
+		byte[] key = MacCoder.initHmacSHA384Key();
 
 		// 获得摘要信息
-		byte[] data1 = MACCoder.encodeHmacSHA384(str.getBytes(), key);
-		byte[] data2 = MACCoder.encodeHmacSHA384(str.getBytes(), key);
+		byte[] data1 = MacCoder.encodeHmacSHA384(str.getBytes(), key);
+		byte[] data2 = MacCoder.encodeHmacSHA384(str.getBytes(), key);
 
 		// 校验
 		assertArrayEquals(data1, data2);
@@ -106,11 +106,11 @@ public class MACCoderTest {
 		String str = "HmacSHA512消息摘要";
 
 		// 初始化密钥
-		byte[] key = MACCoder.initHmacSHA512Key();
+		byte[] key = MacCoder.initHmacSHA512Key();
 
 		// 获得摘要信息
-		byte[] data1 = MACCoder.encodeHmacSHA512(str.getBytes(), key);
-		byte[] data2 = MACCoder.encodeHmacSHA512(str.getBytes(), key);
+		byte[] data1 = MacCoder.encodeHmacSHA512(str.getBytes(), key);
+		byte[] data2 = MacCoder.encodeHmacSHA512(str.getBytes(), key);
 
 		// 校验
 		assertArrayEquals(data1, data2);
