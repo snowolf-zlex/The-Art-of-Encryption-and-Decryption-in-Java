@@ -1,4 +1,3 @@
-package org.snowolf.book.security.sha.commoncodec;
 
 import static org.junit.Assert.*;
 
