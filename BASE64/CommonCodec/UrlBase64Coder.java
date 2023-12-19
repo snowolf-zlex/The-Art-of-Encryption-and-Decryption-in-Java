@@ -1,5 +1,3 @@
-package org.snowolf.book.security.base64.commoncodec;
-
 import org.apache.commons.codec.binary.Base64;
 
 /**
