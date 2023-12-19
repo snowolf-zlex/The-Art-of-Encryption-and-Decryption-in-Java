@@ -1,5 +1,3 @@
-package org.snowolf.book.security.ripe.bouncycastle;
-
 import java.security.Security;
 
 import javax.crypto.KeyGenerator;
