@@ -4,12 +4,13 @@ import org.junit.Test;
 
 /**
  * MAC校验
+ * Java原生实现
  * 
  * @author 梁栋
  * @version 1.0
  * @since 1.0
  */
-public class MACCoderTest {
+public class MacCoderTest {
 
 	/**
 	 * 测试HmacMD5

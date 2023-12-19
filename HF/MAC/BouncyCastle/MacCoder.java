@@ -10,12 +10,13 @@ import org.bouncycastle.util.encoders.Hex;
 
 /**
  * MAC消息摘要组件
+ * BouncyCastle实现
  * 
  * @author 梁栋
  * @version 1.0
  * @since 1.0
  */
-public abstract class MACCoder {
+public abstract class MacCoder {
 
 	/**
 	 * 初始化HmacMD2密钥

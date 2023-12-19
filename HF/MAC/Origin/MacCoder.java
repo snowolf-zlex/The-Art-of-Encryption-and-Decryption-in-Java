@@ -5,6 +5,7 @@ import javax.crypto.spec.SecretKeySpec;
 
 /**
  * MAC消息摘要组件
+ * Java原生实现
  * 
  * @author 梁栋
  * @version 1.0

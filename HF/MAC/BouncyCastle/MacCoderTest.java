@@ -4,6 +4,7 @@ import org.junit.Test;
 
 /**
  * MAC校验
+ * BouncyCastle实现
  * 
  * @author 梁栋
  * @version 1.0

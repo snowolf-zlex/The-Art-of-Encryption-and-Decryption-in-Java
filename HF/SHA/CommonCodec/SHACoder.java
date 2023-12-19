@@ -19,7 +19,7 @@ public abstract class SHACoder {
 	public static byte[] encodeSHA(String data) throws Exception {
 
 		// 执行消息摘要
-		return DigestUtils.sha(data);
+		return DigestUtils.sha1(data);
 	}
 
 	/**
@@ -32,7 +32,7 @@ public abstract class SHACoder {
 	public static String encodeSHAHex(String data) throws Exception {
 
 		// 执行消息摘要
-		return DigestUtils.shaHex(data);
+		return DigestUtils.sha1Hex(data);
 	}
 
 	/**
